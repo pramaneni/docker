@@ -1,3 +1,4 @@
-FROM Ubantu
+FROM ubuntu:latest
 RUN apt install httpd
-ADD . /usr/local/apache2/htdocs/
+ADD index.html /usr/local/apache2/htdocs/
+EXPOSE 80
