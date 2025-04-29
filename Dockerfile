@@ -1,4 +1,4 @@
 FROM ubuntu:latest
-RUN apt install httpd
-ADD index.html /usr/local/apache2/htdocs/
+RUN apt update && apt install -y apache2
+ADD index.html /var/www/html/
 EXPOSE 80
